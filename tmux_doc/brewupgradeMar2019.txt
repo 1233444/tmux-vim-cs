@@ -1,0 +1,562 @@
+You should change the ownership of these directories to your user.
+  sudo chown -R $(whoami) /usr/local/sbin
+┌─[1233444 ~]
+└─[$]sudo chown -R $1233444 /usr/local/sbin
+┌─[1233444 ~]
+└─[$]sudo chown -R 1233444 /usr/local/sbin
+┌─[1233444 ~]
+└─[$]
+┌─[1233444 ~]
+└─[$]brew upgrade
+==> Upgrading 34 outdated packages:
+libtermkey 0.20 -> 0.21.1_1, pyenv 1.2.7 -> 1.2.9, tree 1.7.0 -> 1.8.0, wget 1.19.5 -> 1.20.1_4, w3m 0.5.3_5 -> 0.5.3_6, libidn2 2.0.5 -> 2.1.1a, pandoc 2.3 -> 2.7.1, nettle 3.4 -> 3.4.1, gdbm 1.18 -> 1.18.1, cmake 3.12.2 -> 3.14.0, libuv 1.23.0 -> 1.26.0, python 3.7.0 -> 3.7.2_2, bdw-gc 7.6.8 -> 8.0.2, glib 2.58.0_1 -> 2.60.0_1, readline 7.0.5 -> 8.0.0, libassuan 2.5.1 -> 2.5.3, ruby-build 20180822 -> 20190314, sqlite 3.25.0 -> 3.27.1, libgpg-error 1.32 -> 1.35, bash 4.4.23 -> 5.0.2, libgcrypt 1.8.3 -> 1.8.4, htop 2.2.0 -> 2.2.0_1, sphinx-doc 1.8.0 -> 1.8.5, tmux 2.7 -> 2.8, openssl@1.1 1.1.1 -> 1.1.1b, pcre 8.42 -> 8.43, socat 1.7.3.2_2 -> 1.7.3.2_3, neovim 0.3.1 -> 0.3.4, sdl2 2.0.8 -> 2.0.9, openssl 1.0.2p -> 1.0.2q, gnupg 2.2.10 -> 2.2.13, p11-kit 0.23.14 -> 0.23.15, gnutls 3.5.19 -> 3.6.6, libvterm 681 -> 726
+==> Upgrading openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2q.mojave.bottl
+######################################################################## 100.0%
+==> Pouring openssl-1.0.2q.mojave.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+openssl is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have openssl first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+For pkg-config to find openssl you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2q: 1,794 files, 12.1MB
+==> `brew cleanup` has not been run in 30 days, running now...
+Removing: /Users/1233444/Library/Caches/Homebrew/automake--1.16.1_1.high_sierra.bottle.tar.gz... (943.3KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/bdw-gc--7.6.8.high_sierra.bottle.tar.gz... (490.5KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/cmake--3.12.2.high_sierra.bottle.tar.gz... (12.0MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/gdbm--1.18.high_sierra.bottle.tar.gz... (191.3KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/glib--2.58.0_1.high_sierra.bottle.tar.gz... (5.6MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/gnupg--2.2.10.high_sierra.bottle.tar.gz... (4MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/gnutls--3.5.19.high_sierra.bottle.tar.gz... (2.3MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/ical-buddy--1.8.10.high_sierra.bottle.1.tar.gz... (65.8KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libgpg-error--1.32.high_sierra.bottle.tar.gz... (262.0KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libuv--1.23.0.high_sierra.bottle.tar.gz... (1.2MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/msgpack--3.1.1.high_sierra.bottle.tar.gz... (387KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/neovim--0.3.1.high_sierra.bottle.1.tar.gz... (5.8MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/npth--1.6.high_sierra.bottle.tar.gz... (23.9KB)
+Removing: /usr/local/Cellar/openssl/1.0.2p... (1,793 files, 12.3MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/openssl--1.0.2p.high_sierra.bottle.tar.gz... (3.7MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/openssl@1.1--1.1.1.high_sierra.bottle.tar.gz... (5.2MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/p11-kit--0.23.14.high_sierra.bottle.tar.gz... (693.7KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/pandoc--2.3.high_sierra.bottle.tar.gz... (12.1MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/pyenv--1.2.7.high_sierra.bottle.tar.gz... (590.5KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/python--pip--18.0.tar.gz... (1.2MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/python--wheel--0.31.1.tar.gz... (37.7KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/python--setuptools--40.3.0.zip... (833.7KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/python--3.7.0.tar.xz... (16.1MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/readline--7.0.5.high_sierra.bottle.tar.gz... (494KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/ruby-build--20180822.tar.gz... (57.2KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/sphinx-doc--1.8.0.high_sierra.bottle.tar.gz... (12.8MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/sqlite--3.25.0.high_sierra.bottle.tar.gz... (1.8MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/the_silver_searcher--2.2.0.high_sierra.bottle.tar.gz... (44.6KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/utf8proc--2.2.0.high_sierra.bottle.tar.gz... (153.6KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libvorbis-1.3.6.high_sierra.bottle.tar.gz... (564.8KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/jemalloc-5.1.0.high_sierra.bottle.tar.gz... (539.3KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/htop-2.2.0.high_sierra.bottle.tar.gz... (82.4KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/unibilium-2.0.0.high_sierra.bottle.tar.gz... (138.2KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/bash-4.4.23.high_sierra.bottle.tar.gz... (2.7MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/wget-1.19.5.high_sierra.bottle.tar.gz... (1.3MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/ack-2.24.24-single-file... (138.3KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/gmp-6.1.2_2.high_sierra.bottle.tar.gz... (1005KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/tmux-2.7.high_sierra.bottle.tar.gz... (292.3KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/automake-1.16.1.high_sierra.bottle.tar.gz... (943.0KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/pinentry-1.1.0_1.high_sierra.bottle.tar.gz... (102.8KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libunistring-0.9.10.high_sierra.bottle.tar.gz... (1.4MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/linkage.db... (84KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/socat-1.7.3.2_2.high_sierra.bottle.tar.gz... (244KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libtasn1-4.13.high_sierra.bottle.tar.gz... (131.1KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/pcre-8.42.high_sierra.bottle.tar.gz... (1.8MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libgcrypt-1.8.3.high_sierra.bottle.tar.gz... (1MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libusb-1.0.22.high_sierra.bottle.tar.gz... (159.2KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/xz-5.2.4.high_sierra.bottle.tar.gz... (372.7KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/portable-ruby-2.3.3_2.leopard_64.bottle.tar.gz... (12.4MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/sdl2-2.0.8.high_sierra.bottle.tar.gz... (1.1MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libidn2-2.0.5.high_sierra.bottle.tar.gz... (217.2KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/portable-ruby-2.3.7.leopard_64.bottle.tar.gz... (12.4MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/nmap-7.70.high_sierra.bottle.tar.gz... (7.1MB)
+Removing: /Users/1233444/Library/Caches/Homebrew/libstrophe-0.9.2.high_sierra.bottle.tar.gz... (108.4KB)
+Removing: /Users/1233444/Library/Caches/Homebrew/w3m-0.5.3_5.high_sierra.bottle.tar.gz... (1014.9KB)
+Removing: /Users/1233444/Library/Logs/Homebrew/pandoc... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/ical-buddy... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/lynx... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/gdbm... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/python... (10 files, 4.5MB)
+Removing: /Users/1233444/Library/Logs/Homebrew/readline... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/ruby-build... (2 files, 179B)
+Removing: /Users/1233444/Library/Logs/Homebrew/sqlite... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/sphinx-doc... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/the_silver_searcher... (64B)
+Removing: /Users/1233444/Library/Logs/Homebrew/npth... (64B)
+Pruned 0 symbolic links and 12 directories from /usr/local
+==> Upgrading sqlite
+==> Installing dependencies for sqlite: readline
+==> Installing sqlite dependency: readline
+==> Downloading https://homebrew.bintray.com/bottles/readline-8.0.0.mojave.bottl
+######################################################################## 100.0%
+==> Pouring readline-8.0.0.mojave.bottle.tar.gz
+==> Caveats
+readline is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides the BSD libedit library, which shadows libreadline.
+In order to prevent conflicts when programs look for libreadline we are
+defaulting this GNU Readline installation to keg-only.
+
+For compilers to find readline you may need to set:
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+For pkg-config to find readline you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/readline/8.0.0: 48 files, 1.5MB
+==> Installing sqlite
+==> Downloading https://homebrew.bintray.com/bottles/sqlite-3.27.1.mojave.bottle
+######################################################################## 100.0%
+==> Pouring sqlite-3.27.1.mojave.bottle.tar.gz
+==> Caveats
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides an older sqlite3.
+
+If you need to have sqlite first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find sqlite you may need to set:
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+For pkg-config to find sqlite you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/sqlite/3.27.1: 11 files, 3.7MB
+Removing: /usr/local/Cellar/sqlite/3.25.0... (11 files, 3.7MB)
+==> Upgrading sphinx-doc
+==> Installing dependencies for sphinx-doc: gdbm and python
+==> Installing sphinx-doc dependency: gdbm
+==> Downloading https://homebrew.bintray.com/bottles/gdbm-1.18.1.mojave.bottle.1
+######################################################################## 100.0%
+==> Pouring gdbm-1.18.1.mojave.bottle.1.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.18.1: 20 files, 586.8KB
+==> Installing sphinx-doc dependency: python
+Warning: Building python from source:
+  The bottle needs the Apple Command Line Tools to be installed.
+  You can install them, if desired, with:
+    xcode-select --install
+
+==> Downloading https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+######################################################################## 100.0%
+==> ./configure --prefix=/usr/local/Cellar/python/3.7.2_2 --enable-ipv6 --datarootdir=/usr/local/Cellar/python/3.7.2_2/share --datadir=/usr/local/Cellar/python/3.7.2_2/share --en
+==> make
+==> make install PYTHONAPPSDIR=/usr/local/Cellar/python/3.7.2_2
+==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python/3.7.2_2/share/python
+==> Downloading https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+######################################################################## 100.0%
+==> Downloading https://files.pythonhosted.org/packages/4c/4d/88bc9413da11702cbbace3ccc51350ae099bb351febae8acc85fec34f9af/pip-19.0.2.tar.gz
+######################################################################## 100.0%
+==> Downloading https://files.pythonhosted.org/packages/d9/7d/86df15e317027f6e87aa68ea854abf8437e796b4c0fadd3ae5ee67b77cb2/wheel-0.33.0.tar.gz
+######################################################################## 100.0%
+Error: An unexpected error occurred during the `brew link` step
+The formula built, but is not symlinked into /usr/local
+Permission denied @ dir_s_mkdir - /usr/local/Frameworks
+Error: Permission denied @ dir_s_mkdir - /usr/local/Frameworks
+┌─[1233444 ~]
+└─[$]brew cleanup
+Warning: Skipping bash: most recent version 5.0.2 not installed
+Warning: Skipping bdw-gc: most recent version 8.0.2 not installed
+Warning: Skipping cmake: most recent version 3.14.0 not installed
+Removing: /usr/local/Cellar/gdbm/1.18... (20 files, 584.4KB)
+Warning: Skipping glib: most recent version 2.60.0_1 not installed
+Warning: Skipping gnupg: most recent version 2.2.13 not installed
+Warning: Skipping gnutls: most recent version 3.6.6 not installed
+Warning: Skipping htop: most recent version 2.2.0_1 not installed
+Warning: Skipping libassuan: most recent version 2.5.3 not installed
+Warning: Skipping libgcrypt: most recent version 1.8.4 not installed
+Warning: Skipping libgpg-error: most recent version 1.35 not installed
+Warning: Skipping libidn2: most recent version 2.1.1a not installed
+Warning: Skipping libtermkey: most recent version 0.21.1_1 not installed
+Warning: Skipping libuv: most recent version 1.26.0 not installed
+Warning: Skipping libvterm: most recent version 726 not installed
+Warning: Skipping neovim: most recent version 0.3.4 not installed
+Warning: Skipping nettle: most recent version 3.4.1 not installed
+Warning: Skipping openssl@1.1: most recent version 1.1.1b not installed
+Warning: Skipping p11-kit: most recent version 0.23.15 not installed
+Warning: Skipping pandoc: most recent version 2.7.1 not installed
+Warning: Skipping pcre: most recent version 8.43 not installed
+Warning: Skipping pyenv: most recent version 1.2.9 not installed
+Removing: /usr/local/Cellar/python/3.7.0... (8,869 files, 153.8MB)
+Removing: /usr/local/Cellar/readline/7.0.5... (46 files, 1.5MB)
+Warning: Skipping ruby-build: most recent version 20190314 not installed
+Warning: Skipping sdl2: most recent version 2.0.9 not installed
+Warning: Skipping socat: most recent version 1.7.3.2_3 not installed
+Warning: Skipping sphinx-doc: most recent version 1.8.5 not installed
+Warning: Skipping tmux: most recent version 2.8 not installed
+Warning: Skipping tree: most recent version 1.8.0 not installed
+Warning: Skipping w3m: most recent version 0.5.3_6 not installed
+Warning: Skipping wget: most recent version 1.20.1_4 not installed
+┌─[1233444 ~]
+└─[$]brew upgrade
+To restore the stashed changes to /usr/local/Homebrew run:
+  'cd /usr/local/Homebrew && git stash pop'
+==> Upgrading 29 outdated packages:
+libtermkey 0.20 -> 0.21.1_1, pyenv 1.2.7 -> 1.2.9, tree 1.7.0 -> 1.8.0, wget 1.19.5 -> 1.20.1_4, w3m 0.5.3_5 -> 0.5.3_6, libidn2 2.0.5 -> 2.1.1a, pandoc 2.3 -> 2.7.1, nettle 3.4 -> 3.4.1, cmake 3.12.2 -> 3.14.0, libuv 1.23.0 -> 1.26.0, bdw-gc 7.6.8 -> 8.0.2, glib 2.58.0_1 -> 2.60.0_1, libassuan 2.5.1 -> 2.5.3, ruby-build 20180822 -> 20190314, libgpg-error 1.32 -> 1.35, bash 4.4.23 -> 5.0.2, libgcrypt 1.8.3 -> 1.8.4, htop 2.2.0 -> 2.2.0_1, sphinx-doc 1.8.0 -> 1.8.5, tmux 2.7 -> 2.8, openssl@1.1 1.1.1 -> 1.1.1b, pcre 8.42 -> 8.43, socat 1.7.3.2_2 -> 1.7.3.2_3, neovim 0.3.1 -> 0.3.4, sdl2 2.0.8 -> 2.0.9, gnupg 2.2.10 -> 2.2.13, p11-kit 0.23.14 -> 0.23.15, gnutls 3.5.19 -> 3.6.6, libvterm 681 -> 726
+==> Upgrading sphinx-doc
+==> Downloading https://homebrew.bintray.com/bottles/sphinx-doc-1.8.5.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring sphinx-doc-1.8.5.mojave.bottle.tar.gz
+==> Caveats
+sphinx-doc is keg-only, which means it was not symlinked into /usr/local,
+because this formula is mainly used internally by other formulae.
+Users are advised to use `pip` to install sphinx-doc.
+
+If you need to have sphinx-doc first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"' >> ~/.bash_profile
+
+==> Summary
+🍺  /usr/local/Cellar/sphinx-doc/1.8.5: 3,121 files, 50.8MB
+Removing: /usr/local/Cellar/sphinx-doc/1.8.0... (2,695 files, 46.3MB)
+==> Upgrading openssl@1.1
+==> Downloading https://homebrew.bintray.com/bottles/openssl@1.1-1.1.1b.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring openssl@1.1-1.1.1b.mojave.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because openssl/libressl is provided by macOS so don't link an incompatible version.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+For pkg-config to find openssl@1.1 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/openssl@1.1/1.1.1b: 7,957 files, 17.9MB
+Removing: /usr/local/Cellar/openssl@1.1/1.1.1... (7,821 files, 18.1MB)
+==> Upgrading tree
+==> Downloading https://homebrew.bintray.com/bottles/tree-1.8.0.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring tree-1.8.0.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/tree/1.8.0: 8 files, 117KB
+Removing: /usr/local/Cellar/tree/1.7.0... (7 files, 113.3KB)
+==> Upgrading wget
+==> Installing dependencies for wget: libidn2
+==> Installing wget dependency: libidn2
+==> Downloading https://homebrew.bintray.com/bottles/libidn2-2.1.1a.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libidn2-2.1.1a.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libidn2/2.1.1a: 69 files, 691.8KB
+==> Installing wget
+==> Downloading https://homebrew.bintray.com/bottles/wget-1.20.1_4.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring wget-1.20.1_4.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/wget/1.20.1_4: 49 files, 3.9MB
+Removing: /usr/local/Cellar/wget/1.19.5... (50 files, 3.7MB)
+==> Upgrading w3m
+==> Installing dependencies for w3m: bdw-gc
+==> Installing w3m dependency: bdw-gc
+==> Downloading https://homebrew.bintray.com/bottles/bdw-gc-8.0.2.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring bdw-gc-8.0.2.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/bdw-gc/8.0.2: 65 files, 1.2MB
+==> Installing w3m
+==> Downloading https://homebrew.bintray.com/bottles/w3m-0.5.3_6.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring w3m-0.5.3_6.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/w3m/0.5.3_6: 28 files, 1.8MB
+Removing: /usr/local/Cellar/w3m/0.5.3_5... (28 files, 1.8MB)
+Removing: /usr/local/Cellar/libidn2/2.0.5... (68 files, 668.6KB)
+==> Upgrading pandoc
+==> Downloading https://homebrew.bintray.com/bottles/pandoc-2.7.1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring pandoc-2.7.1.mojave.bottle.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/pandoc/2.7.1: 172 files, 73.4MB
+Removing: /usr/local/Cellar/pandoc/2.3... (171 files, 64.9MB)
+==> Upgrading nettle
+==> Downloading https://homebrew.bintray.com/bottles/nettle-3.4.1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring nettle-3.4.1.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/nettle/3.4.1: 85 files, 2MB
+Removing: /usr/local/Cellar/nettle/3.4... (85 files, 2MB)
+==> Upgrading cmake
+==> Downloading https://homebrew.bintray.com/bottles/cmake-3.14.0.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring cmake-3.14.0.mojave.bottle.tar.gz
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> Summary
+🍺  /usr/local/Cellar/cmake/3.14.0: 5,680 files, 53.2MB
+Removing: /usr/local/Cellar/cmake/3.12.2... (2,417 files, 33.6MB)
+==> Upgrading libuv
+==> Downloading https://homebrew.bintray.com/bottles/libuv-1.26.0.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libuv-1.26.0.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libuv/1.26.0: 57 files, 2.9MB
+Removing: /usr/local/Cellar/libuv/1.23.0... (57 files, 2.9MB)
+Removing: /usr/local/Cellar/bdw-gc/7.6.8... (70 files, 1.5MB)
+==> Upgrading glib
+==> Installing dependencies for glib: pcre
+==> Installing glib dependency: pcre
+==> Downloading https://homebrew.bintray.com/bottles/pcre-8.43.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring pcre-8.43.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.43: 204 files, 5.5MB
+==> Installing glib
+==> Downloading https://homebrew.bintray.com/bottles/glib-2.60.0_1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring glib-2.60.0_1.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/glib/2.60.0_1: 432 files, 15.3MB
+Removing: /usr/local/Cellar/glib/2.58.0_1... (435 files, 18.4MB)
+==> Upgrading libassuan
+==> Installing dependencies for libassuan: libgpg-error
+==> Installing libassuan dependency: libgpg-error
+==> Downloading https://homebrew.bintray.com/bottles/libgpg-error-1.35.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libgpg-error-1.35.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libgpg-error/1.35: 27 files, 854.8KB
+==> Installing libassuan
+==> Downloading https://homebrew.bintray.com/bottles/libassuan-2.5.3.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libassuan-2.5.3.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libassuan/2.5.3: 16 files, 444.2KB
+Removing: /usr/local/Cellar/libassuan/2.5.1... (15 files, 435.5KB)
+==> Upgrading ruby-build
+==> Downloading https://github.com/rbenv/ruby-build/archive/v20190314.tar.gz
+==> Downloading from https://codeload.github.com/rbenv/ruby-build/tar.gz/v20190314
+######################################################################## 100.0%
+==> ./install.sh
+🍺  /usr/local/Cellar/ruby-build/20190314: 438 files, 219.7KB, built in 8 seconds
+Removing: /usr/local/Cellar/ruby-build/20180822... (409 files, 207KB)
+Removing: /usr/local/Cellar/libgpg-error/1.32... (25 files, 810.2KB)
+==> Upgrading bash
+==> Downloading https://homebrew.bintray.com/bottles/bash-5.0.2.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring bash-5.0.2.mojave.bottle.tar.gz
+==> Caveats
+In order to use this build of bash as your login shell,
+it must be added to /etc/shells.
+==> Summary
+🍺  /usr/local/Cellar/bash/5.0.2: 150 files, 9.4MB
+Removing: /usr/local/Cellar/bash/4.4.23... (146 files, 8.8MB)
+==> Upgrading libgcrypt
+==> Downloading https://homebrew.bintray.com/bottles/libgcrypt-1.8.4.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libgcrypt-1.8.4.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libgcrypt/1.8.4: 21 files, 2.6MB
+Removing: /usr/local/Cellar/libgcrypt/1.8.3... (21 files, 2.6MB)
+==> Upgrading htop
+==> Installing dependencies for htop: ncurses
+==> Installing htop dependency: ncurses
+==> Downloading https://homebrew.bintray.com/bottles/ncurses-6.1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring ncurses-6.1.mojave.bottle.tar.gz
+==> Caveats
+ncurses is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have ncurses first in your PATH run:
+  echo 'export PATH="/usr/local/opt/ncurses/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find ncurses you may need to set:
+  export LDFLAGS="-L/usr/local/opt/ncurses/lib"
+  export CPPFLAGS="-I/usr/local/opt/ncurses/include"
+
+For pkg-config to find ncurses you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/ncurses/6.1: 3,869 files, 8.3MB
+==> Installing htop
+==> Downloading https://homebrew.bintray.com/bottles/htop-2.2.0_1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring htop-2.2.0_1.mojave.bottle.tar.gz
+==> Caveats
+htop requires root privileges to correctly display all running processes,
+so you will need to run `sudo htop`.
+You should be certain that you trust any software you grant root privileges.
+==> Summary
+🍺  /usr/local/Cellar/htop/2.2.0_1: 11 files, 188KB
+Removing: /usr/local/Cellar/htop/2.2.0... (11 files, 188.0KB)
+==> Upgrading tmux
+==> Downloading https://homebrew.bintray.com/bottles/tmux-2.8.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring tmux-2.8.mojave.bottle.tar.gz
+==> Caveats
+Example configuration has been installed to:
+  /usr/local/opt/tmux/share/tmux
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/tmux/2.8: 10 files, 709.5KB
+Removing: /usr/local/Cellar/tmux/2.7... (10 files, 700.7KB)
+Removing: /usr/local/Cellar/pcre/8.42... (204 files, 5.3MB)
+==> Upgrading socat
+==> Downloading https://homebrew.bintray.com/bottles/socat-1.7.3.2_3.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring socat-1.7.3.2_3.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/socat/1.7.3.2_3: 9 files, 649.7KB
+Removing: /usr/local/Cellar/socat/1.7.3.2_2... (9 files, 649.7KB)
+==> Upgrading neovim
+==> Installing dependencies for neovim: libtermkey and libvterm
+==> Installing neovim dependency: libtermkey
+==> Downloading https://homebrew.bintray.com/bottles/libtermkey-0.21.1_1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libtermkey-0.21.1_1.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libtermkey/0.21.1_1: 33 files, 104.7KB
+==> Installing neovim dependency: libvterm
+==> Downloading https://homebrew.bintray.com/bottles/libvterm-726.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libvterm-726.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libvterm/726: 12 files, 171.5KB
+==> Installing neovim
+==> Downloading https://homebrew.bintray.com/bottles/neovim-0.3.4.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring neovim-0.3.4.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/neovim/0.3.4: 1,398 files, 19MB
+Removing: /usr/local/Cellar/neovim/0.3.1... (1,379 files, 18.4MB)
+==> Upgrading sdl2
+==> Downloading https://homebrew.bintray.com/bottles/sdl2-2.0.9.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring sdl2-2.0.9.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/sdl2/2.0.9: 87 files, 4.5MB
+Removing: /usr/local/Cellar/sdl2/2.0.8... (86 files, 4.2MB)
+==> Upgrading gnupg
+==> Installing dependencies for gnupg: p11-kit, unbound and gnutls
+==> Installing gnupg dependency: p11-kit
+==> Downloading https://homebrew.bintray.com/bottles/p11-kit-0.23.15.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring p11-kit-0.23.15.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/p11-kit/0.23.15: 63 files, 2.9MB
+==> Installing gnupg dependency: unbound
+==> Downloading https://homebrew.bintray.com/bottles/unbound-1.9.1.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring unbound-1.9.1.mojave.bottle.tar.gz
+==> Caveats
+To have launchd start unbound now and restart at startup:
+  sudo brew services start unbound
+==> Summary
+🍺  /usr/local/Cellar/unbound/1.9.1: 55 files, 4.8MB
+==> Installing gnupg dependency: gnutls
+==> Downloading https://homebrew.bintray.com/bottles/gnutls-3.6.6.mojave.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Pouring gnutls-3.6.6.mojave.bottle.1.tar.gz
+🍺  /usr/local/Cellar/gnutls/3.6.6: 1,205 files, 9.2MB
+==> Installing gnupg
+==> Downloading https://homebrew.bintray.com/bottles/gnupg-2.2.13.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring gnupg-2.2.13.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/gnupg/2.2.13: 134 files, 11.0MB
+Removing: /usr/local/Cellar/gnupg/2.2.10... (133 files, 10.5MB)
+Removing: /usr/local/Cellar/p11-kit/0.23.14... (63 files, 2.9MB)
+Removing: /usr/local/Cellar/gnutls/3.5.19... (1,105 files, 7.7MB)
+Removing: /usr/local/Cellar/libtermkey/0.20... (33 files, 104.1KB)
+Removing: /usr/local/Cellar/libvterm/681... (11 files, 167.8KB)
+==> Upgrading pyenv
+==> Downloading https://homebrew.bintray.com/bottles/pyenv-1.2.9.mojave.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring pyenv-1.2.9.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/pyenv/1.2.9: 619 files, 2.4MB
+Removing: /usr/local/Cellar/pyenv/1.2.7... (608 files, 2.4MB)
+==> Caveats
+==> sphinx-doc
+sphinx-doc is keg-only, which means it was not symlinked into /usr/local,
+because this formula is mainly used internally by other formulae.
+Users are advised to use `pip` to install sphinx-doc.
+
+If you need to have sphinx-doc first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"' >> ~/.bash_profile
+
+==> openssl@1.1
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because openssl/libressl is provided by macOS so don't link an incompatible version.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+For pkg-config to find openssl@1.1 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+==> pandoc
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> cmake
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> bash
+In order to use this build of bash as your login shell,
+it must be added to /etc/shells.
+==> ncurses
+ncurses is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have ncurses first in your PATH run:
+  echo 'export PATH="/usr/local/opt/ncurses/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find ncurses you may need to set:
+  export LDFLAGS="-L/usr/local/opt/ncurses/lib"
+  export CPPFLAGS="-I/usr/local/opt/ncurses/include"
+
+For pkg-config to find ncurses you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig"
+
+==> htop
+htop requires root privileges to correctly display all running processes,
+so you will need to run `sudo htop`.
+You should be certain that you trust any software you grant root privileges.
+==> tmux
+Example configuration has been installed to:
+  /usr/local/opt/tmux/share/tmux
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> unbound
+To have launchd start unbound now and restart at startup:
+  sudo brew services start unbound
+┌─[1233444 ~]
+└─[$]

@@ -1,0 +1,106 @@
+✔ ~/Documents/workspace/GitHub/tmux-vim-cs/tmux_doc [master|✔]
+17:07 $ brew upgrade
+==> Upgrading 8 outdated packages, with result:
+cmake 3.8.1, gnupg 2.1.20_1, gnutls 3.5.12, gpg-agent 2.0.30_3, libusb-compat 0.1.5_1, libvorbis 1.3.5_1, neovim/neovim/neovim 0.2.0, the_silver_searcher 1.0.3
+==> Upgrading gpg-agent
+==> Downloading https://homebrew.bintray.com/bottles/gpg-agent-2.0.30_3.sierra.bottle.tar
+######################################################################## 100.0%
+==> Pouring gpg-agent-2.0.30_3.sierra.bottle.tar.gz
+==> Caveats
+Remember to add "use-standard-socket" to your ~/.gnupg/gpg-agent.conf
+file.
+
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+GPG 2.1.x ships an internal gpg-agent which it must use
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/gpg-agent/bin:$PATH"' >> ~/.bash_profile
+
+  ==> Summary
+  🍺  /usr/local/Cellar/gpg-agent/2.0.30_3: 12 files, 690.2KB
+  ==> Upgrading libusb-compat
+  ==> Downloading https://homebrew.bintray.com/bottles/libusb-compat-0.1.5_1.sierra.bottle.
+######################################################################## 100.0%
+  ==> Pouring libusb-compat-0.1.5_1.sierra.bottle.tar.gz
+  🍺  /usr/local/Cellar/libusb-compat/0.1.5_1: 14 files, 94.3KB
+  ==> Upgrading gnutls
+  ==> Downloading https://homebrew.bintray.com/bottles/gnutls-3.5.12.sierra.bottle.tar.gz
+######################################################################## 100.0%
+  ==> Pouring gnutls-3.5.12.sierra.bottle.tar.gz
+  ==> Using the sandbox
+  🍺  /usr/local/Cellar/gnutls/3.5.12: 1,105 files, 7.6MB
+  ==> Upgrading cmake
+  ==> Downloading https://homebrew.bintray.com/bottles/cmake-3.8.1.sierra.bottle.tar.gz
+######################################################################## 100.0%
+  ==> Pouring cmake-3.8.1.sierra.bottle.tar.gz
+  ==> Caveats
+  Emacs Lisp files have been installed to:
+    /usr/local/share/emacs/site-lisp/cmake
+    ==> Summary
+    🍺  /usr/local/Cellar/cmake/3.8.1: 2,208 files, 29.2MB
+    ==> Upgrading gnupg
+    ==> Downloading https://homebrew.bintray.com/bottles/gnupg-2.1.20_1.sierra.bottle.tar.gz
+######################################################################## 100.0%
+    ==> Pouring gnupg-2.1.20_1.sierra.bottle.tar.gz
+    ==> Caveats
+    Once you run this version of gpg you may find it difficult to return to using
+    a prior 1.4.x or 2.0.x. Most notably the prior versions will not automatically
+    know about new secret keys created or imported by this version. We recommend
+    creating a backup of your `~/.gnupg` prior to first use.
+
+    For full details on each change and how it could impact you please see
+      https://www.gnupg.org/faq/whats-new-in-2.1.html
+      ==> Summary
+      🍺  /usr/local/Cellar/gnupg/2.1.20_1: 136 files, 10.1MB
+      ==> Upgrading libvorbis
+      ==> Downloading https://homebrew.bintray.com/bottles/libvorbis-1.3.5_1.sierra.bottle.tar.
+######################################################################## 100.0%
+      ==> Pouring libvorbis-1.3.5_1.sierra.bottle.tar.gz
+      🍺  /usr/local/Cellar/libvorbis/1.3.5_1: 159 files, 2.3MB
+      ==> Upgrading neovim/neovim/neovim
+      ==> Downloading https://github.com/neovim/neovim/archive/v0.2.0.tar.gz
+      ==> Downloading from https://codeload.github.com/neovim/neovim/tar.gz/v0.2.0
+######################################################################## 100.0%
+      ==> Downloading https://github.com/luvit/luv/archive/146f1ce4c08c3b67f604c9ee1e124b1cf5c1
+      Already downloaded: /Users/1233444/Library/Caches/Homebrew/neovim--luv-3.tar.gz
+      ==> Downloading https://raw.githubusercontent.com/neovim/deps/master/opt/LuaJIT-2.0.4.tar
+      Already downloaded: /Users/1233444/Library/Caches/Homebrew/neovim--luajit-2.0.4.tar.gz
+      ==> Downloading https://github.com/keplerproject/luarocks/archive/5d8a16526573b36d5b22aa7
+      Already downloaded: /Users/1233444/Library/Caches/Homebrew/neovim--luarocks-998466697.tar.gz
+      ==> Building third-party dependencies.
+      ==> cmake ../third-party -DUSE_BUNDLED_BUSTED=OFF -DUSE_BUNDLED_GPERF=OFF -DUSE_BUNDLED_L
+      ==> make VERBOSE=1
+      ==> Building Neovim.
+      ==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_
+      ==> make VERBOSE=1 install
+      ==> Caveats
+      To run Neovim, use the "nvim" command (not "neovim"):
+          nvim
+
+          After installing or upgrading, run the "CheckHealth" command:
+              :CheckHealth
+
+              See ':help nvim-from-vim' for information about how to use
+              your existing Vim configuration with Neovim.
+
+              Breaking changes (if any) are documented at:
+                  https://github.com/neovim/neovim/wiki/Following-HEAD
+
+                  For other questions:
+                      https://github.com/neovim/neovim/wiki/FAQ
+                      ==> Summary
+                      🍺  /usr/local/Cellar/neovim/0.2.0: 1,352 files, 17.2MB, built in 2 minutes 7 seconds
+                      ==> Upgrading the_silver_searcher
+                      ==> Downloading https://homebrew.bintray.com/bottles/the_silver_searcher-1.0.3.sierra.bot
+######################################################################## 100.0%
+                      ==> Pouring the_silver_searcher-1.0.3.sierra.bottle.tar.gz
+                      ==> Caveats
+                      Bash completion has been installed to:
+                        /usr/local/etc/bash_completion.d
+
+                        zsh completions have been installed to:
+                          /usr/local/share/zsh/site-functions
+                          ==> Summary
+                          🍺  /usr/local/Cellar/the_silver_searcher/1.0.3: 10 files, 113.4KB
+
