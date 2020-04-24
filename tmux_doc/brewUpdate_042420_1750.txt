@@ -1,0 +1,88 @@
+==> Checking for dependents of upgraded formulae...
+==> No dependents found!
+==> Caveats
+==> libffi
+libffi is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+For compilers to find libffi you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+
+For pkg-config to find libffi you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+==> openssl@1.1
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides LibreSSL.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+For pkg-config to find openssl@1.1 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+==> pandoc
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> cmake
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> python@3.8
+Python has been installed as
+  /usr/local/opt/python@3.8/bin/python3
+
+You can install Python packages with
+  /usr/local/opt/python@3.8/bin/pip3 install <package>
+They will install into the site-package directory
+  /usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+
+python@3.8 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have python@3.8 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find python@3.8 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
+
+For pkg-config to find python@3.8 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
+
+==> glib
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> ruby-build
+ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
+
+To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded) add the following
+to your ~/.bash_profile:
+  export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+Note: this may interfere with building old versions of Ruby (e.g <2.4) that use
+OpenSSL <1.1.
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
