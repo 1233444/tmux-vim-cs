@@ -1,0 +1,29 @@
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python@3.9/libexec/bin
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.9/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> youtube-dl
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> ffmpeg@2.8
+ffmpeg@2.8 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have ffmpeg@2.8 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/ffmpeg@2.8/bin:$PATH"' >> /Users/kchan/.bash_profile
+
+For compilers to find ffmpeg@2.8 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/ffmpeg@2.8/lib"
+  export CPPFLAGS="-I/usr/local/opt/ffmpeg@2.8/include"
+
+For pkg-config to find ffmpeg@2.8 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/ffmpeg@2.8/lib/pkgconfig"
